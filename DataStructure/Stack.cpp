@@ -27,7 +27,7 @@ int Stack::Top()
 
 void Stack::LoadArray()
 {
-	while (top >= 0)
+	while (!IsEmpty())
 	{
 		cout << arr[top] << endl;
 		pop();
