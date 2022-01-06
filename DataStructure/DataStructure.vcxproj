@@ -141,9 +141,11 @@
   <ItemGroup>
     <ClCompile Include="DataStructure.cpp" />
     <ClCompile Include="Stack.cpp" />
+    <ClCompile Include="StackApplication.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Stack.h" />
+    <ClInclude Include="StackApplication.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -25,6 +25,8 @@ int Stack::Top()
 	return arr[top];
 }
 
+
+
 void Stack::LoadArray()
 {
 	while (!IsEmpty())

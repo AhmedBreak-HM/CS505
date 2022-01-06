@@ -2,10 +2,10 @@
 class Stack
 {
 private:
-	int top = -1;
 	int size;
 	int arr[100];
 public:
+	int top = -1;
 	void Push(int value);
 	void pop();
 	bool IsEmpty();

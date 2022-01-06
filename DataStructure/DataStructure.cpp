@@ -1,5 +1,7 @@
 #include <iostream>
 #include "Stack.h"
+#include "StackApplication.h"
+#include<string>
 using namespace std;
 int main()
 {
@@ -12,6 +14,17 @@ int main()
 	s.Push(4);
 	s.Push(5);
 	s.LoadArray();
+
+
+	StackApplication stack;
+	string exp;
+	cin >> exp;
+	if (stack.IsBalanced(exp))cout << "Is Balanced" << endl;
+	else cout << "Not Balanced" << endl;
+
+
 	return 0;
 }
+
+
 
