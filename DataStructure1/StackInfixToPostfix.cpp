@@ -3,9 +3,11 @@
 
 string StackInfixToPostfix::ConvertInfixToPostfix(string exp)
 {
+	int expSize = exp.size();
 	stack<char> stk;
 	string output = "";
-	for (int i = 0; i < exp.length(); i++) {
+
+	for (int i = 0; i < expSize; i++) {
 		if (exp[i] == ' ') continue;
 		if (isdigit(exp[i]) || isalpha(exp[i])) output += exp[i];
 		else if (exp[i] == '(') stk.push(exp[i]);
@@ -29,6 +31,7 @@ string StackInfixToPostfix::ConvertInfixToPostfix(string exp)
 			stk.pop();
 		}
 	}
+
 	return output;
 }
 
@@ -39,3 +42,4 @@ int StackInfixToPostfix::Priorty(char c)
 	else if (c == '^') return 3;
 	return 0;
 }
+

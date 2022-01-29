@@ -1,20 +1,29 @@
 #include <iostream>
 #include "Stack.h"
 #include "StackApplication.h"
+#include "StackInfixToPostfix.h"
+
 #include<string>
 #include<stack>
-#include"StackInfixToPostfix.h"
 using namespace std;
 int main()
 {
 	// Casting Infix to Prefix Using Stack
 
+	try
+	{
+		string InfixExpressions = ("(3+2)+7/2*((7+3)*2)");
+		StackInfixToPostfix stk;
 
-	string InfixExpressions = ("(3+2)+7/2*((7+3)*2)");
-	StackInfixToPostfix stk;
+		string output = stk.ConvertInfixToPostfix(InfixExpressions);
+		cout << output << endl;
 
-	string output = stk.ConvertInfixToPostfix(InfixExpressions);
-	cout << output << endl;
+	}
+	catch (const std::exception&)
+	{
+
+	}
+
 
 
 

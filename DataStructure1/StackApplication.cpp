@@ -3,8 +3,9 @@
 
 bool StackApplication::IsBalanced(string expresion)
 {
+	int expSize = expresion.size();
 	Stack openbrackets;
-	for (int i = 0; i < expresion.length(); i++) {
+	for (int i = 0; i < expSize; i++) {
 		if (expresion[i] == '(' || expresion[i] == '{' || expresion[i] == '[') {
 			openbrackets.Push(expresion[i]);
 
